@@ -1,0 +1,14 @@
+name: NoTotem
+main: dev.nototem.NoTotem
+version: '${version}'
+api-version: '26.2'
+description: Removes Totems of Undying from the server so nobody can cheat death.
+commands:
+  nototem:
+    description: Manage NoTotem
+    usage: /nototem <on|off|reload|status|purge>
+    aliases: [nt]
+permissions:
+  nototem.admin:
+    description: Use the /nototem command
+    default: op

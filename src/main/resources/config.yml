@@ -1,0 +1,35 @@
+# NoTotem
+# Totems of Undying can't be dropped, picked up, carried, stored or used.
+# Everything is event driven (no repeating tasks).
+# Change settings in game with /nototem on|off|status|reload|purge
+
+# Master switch. false = the plugin does nothing.
+enabled: true
+
+# Evokers and every other mob, chest or loot drop can't produce totems.
+prevent-drops: true
+
+# Clears totems from the inventory, armor slots and offhand on join, respawn and world change.
+remove-on-join: true
+
+# Totems picked up from the ground (or grabbed in creative mode) are removed.
+prevent-pickup: true
+
+# Blocks moving totems into containers, shulker boxes, bundles and hoppers.
+prevent-storage: true
+
+# Totems that are already stored are removed when a container or ender chest is opened.
+remove-existing: true
+
+# A totem can never save a player, even if someone gets hold of one (creative, /give).
+block-use: true
+
+# Tell the player when a totem is taken from them.
+notify-player: true
+
+# Tell players with nototem.admin when a totem is removed.
+notify-admins: false
+
+messages:
+  prefix: "&8[&cNoTotem&8] "
+  totem-removed: "&cTotems of Undying are disabled on this server."
